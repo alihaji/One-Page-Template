@@ -1,0 +1,113 @@
+/* Scss Document */
+
+@import 'mixins';
+
+
+
+.circular-progress{
+	&,
+	&:before,
+	&:after{
+	width: 12rem;
+	height:12rem;
+	border-radius: 50%;
+	
+		
+	}
+	margin: auto;
+	position: relative;
+
+	&:before,
+	&:after{
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		
+
+	}
+	&:before{
+		padding: .5em;
+		box-sizing: border-box;
+		font-size: 2rem;
+		line-height: 8rem;
+		
+		
+		
+	}
+	&:after{
+		line-height:14rem;
+		
+	}
+}
+
+
+@function progress($percent){
+	$deg: $percent/100 * 180;
+	@return #{$deg}deg;
+}
+
+@mixin circular-progress($percent,$skill,$color,$bgcolor){
+	
+	
+	$progress: progress($percent);
+	@include transform(rotate($progress));
+	background: linear-gradient(
+	0deg,
+	$color 50%,
+	rgba($color, .2) 50%
+	);
+	&:before,
+	&:after{
+		color: $color;
+	}
+	&:before{
+		content:"#{$skill}";
+		background: $bgcolor content-box;
+		@include transform( rotate(-#{$progress}));
+		text-transform: uppercase;	
+	}
+	&:after{
+		content: "#{$percent}%";
+		background: linear-gradient(
+		transparent 50%,
+		$bgcolor 50%
+	);
+		@include transform( scale(1.1) rotate(-#{$progress}));
+	}
+}
+
+.html{
+	@include circular-progress(
+		70,
+		html5,
+		lighten(green,15),
+		#30373e
+		)
+}
+
+.css{
+	@include circular-progress(
+		87,
+		css,
+		lighten(blue,25),
+		#30373e
+		)
+}
+
+.java{
+	@include circular-progress(
+		80,
+		java,
+		lighten(red, 15),
+		#30373e
+		)
+}
+.php{
+	@include circular-progress(
+		40,
+		ruby,
+		lighten(purple,20),
+		#30373e
+		)
+}

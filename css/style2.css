@@ -1,0 +1,131 @@
+/* Scss Document */
+/* Scss Document */
+.circular-progress {
+  margin: auto;
+  position: relative; }
+  .circular-progress, .circular-progress:before, .circular-progress:after {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%; }
+  .circular-progress:before, .circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center; }
+  .circular-progress:before {
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: 2rem;
+    line-height: 8rem; }
+  .circular-progress:after {
+    line-height: 14rem; }
+
+.html {
+  -moz-transform: rotate(126.0deg);
+  -o-transform: rotate(126.0deg);
+  -ms-transform: rotate(126.0deg);
+  -webkit-transform: rotate(126.0deg);
+  transform: rotate(126.0deg);
+  background: linear-gradient(0deg, #00cd00 50%, rgba(0, 205, 0, 0.2) 50%); }
+  .html:before, .html:after {
+    color: #00cd00; }
+  .html:before {
+    content: "html5";
+    background: #30373e content-box;
+    -moz-transform: rotate(-126.0deg);
+    -o-transform: rotate(-126.0deg);
+    -ms-transform: rotate(-126.0deg);
+    -webkit-transform: rotate(-126.0deg);
+    transform: rotate(-126.0deg);
+    text-transform: uppercase; }
+  .html:after {
+    content: "70%";
+    background: linear-gradient(transparent 50%, #30373e 50%);
+    -moz-transform: scale(1.1) rotate(-126.0deg);
+    -o-transform: scale(1.1) rotate(-126.0deg);
+    -ms-transform: scale(1.1) rotate(-126.0deg);
+    -webkit-transform: scale(1.1) rotate(-126.0deg);
+    transform: scale(1.1) rotate(-126.0deg); }
+
+.css {
+  -moz-transform: rotate(156.6deg);
+  -o-transform: rotate(156.6deg);
+  -ms-transform: rotate(156.6deg);
+  -webkit-transform: rotate(156.6deg);
+  transform: rotate(156.6deg);
+  background: linear-gradient(0deg, #8080ff 50%, rgba(128, 128, 255, 0.2) 50%); }
+  .css:before, .css:after {
+    color: #8080ff; }
+  .css:before {
+    content: "css";
+    background: #30373e content-box;
+    -moz-transform: rotate(-156.6deg);
+    -o-transform: rotate(-156.6deg);
+    -ms-transform: rotate(-156.6deg);
+    -webkit-transform: rotate(-156.6deg);
+    transform: rotate(-156.6deg);
+    text-transform: uppercase; }
+  .css:after {
+    content: "87%";
+    background: linear-gradient(transparent 50%, #30373e 50%);
+    -moz-transform: scale(1.1) rotate(-156.6deg);
+    -o-transform: scale(1.1) rotate(-156.6deg);
+    -ms-transform: scale(1.1) rotate(-156.6deg);
+    -webkit-transform: scale(1.1) rotate(-156.6deg);
+    transform: scale(1.1) rotate(-156.6deg); }
+
+.java {
+  -moz-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+  background: linear-gradient(0deg, #ff4d4d 50%, rgba(255, 77, 77, 0.2) 50%); }
+  .java:before, .java:after {
+    color: #ff4d4d; }
+  .java:before {
+    content: "java";
+    background: #30373e content-box;
+    -moz-transform: rotate(-144deg);
+    -o-transform: rotate(-144deg);
+    -ms-transform: rotate(-144deg);
+    -webkit-transform: rotate(-144deg);
+    transform: rotate(-144deg);
+    text-transform: uppercase; }
+  .java:after {
+    content: "80%";
+    background: linear-gradient(transparent 50%, #30373e 50%);
+    -moz-transform: scale(1.1) rotate(-144deg);
+    -o-transform: scale(1.1) rotate(-144deg);
+    -ms-transform: scale(1.1) rotate(-144deg);
+    -webkit-transform: scale(1.1) rotate(-144deg);
+    transform: scale(1.1) rotate(-144deg); }
+
+.php {
+  -moz-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+  background: linear-gradient(0deg, #e600e6 50%, rgba(230, 0, 230, 0.2) 50%); }
+  .php:before, .php:after {
+    color: #e600e6; }
+  .php:before {
+    content: "ruby";
+    background: #30373e content-box;
+    -moz-transform: rotate(-72deg);
+    -o-transform: rotate(-72deg);
+    -ms-transform: rotate(-72deg);
+    -webkit-transform: rotate(-72deg);
+    transform: rotate(-72deg);
+    text-transform: uppercase; }
+  .php:after {
+    content: "40%";
+    background: linear-gradient(transparent 50%, #30373e 50%);
+    -moz-transform: scale(1.1) rotate(-72deg);
+    -o-transform: scale(1.1) rotate(-72deg);
+    -ms-transform: scale(1.1) rotate(-72deg);
+    -webkit-transform: scale(1.1) rotate(-72deg);
+    transform: scale(1.1) rotate(-72deg); }
+
+/*# sourceMappingURL=Untitled-1.css.map */

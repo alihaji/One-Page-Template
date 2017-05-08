@@ -1,0 +1,358 @@
+@charset "utf-8";
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+div.divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0 solid;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+    line-height: 0.01em;
+    margin: 35px 0;
+}
+div.divider > span.gray {
+    background: #30373e;
+    padding: 0 10px;
+    font-size: 18px;
+}
+div.divider > span.primary {
+    background: #337ab7;
+    padding: 0 10px;
+    font-size: 18px;
+}
+div.divider-dark {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0 solid;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(000, 000, 000, 0.8), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(000, 000, 000, 0.8), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(000, 000, 000, 0.8), rgba(0, 0, 0, 0));
+    line-height: 0.01em;
+}
+.top-photo {
+    text-align: center;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(../images/Icon_myphoto.png);
+}
+div.divider-dark > span.danger {
+    background: #f2dede;
+    padding: 0 10px;
+    font-size: 18px;
+}
+div.divider-dark > span.success {
+    background: #dff0d8;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.top-nav {
+    display: inline-flex;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-bottom: 2px dashed gray;
+    border-top: 2px dashed gray;
+}
+hr.style3 {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0));
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content-holder {
+    height: 50vh;
+    text-align: center;
+    margin: auto;
+}
+.content-holder-full {
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+}
+.p-holder {
+    padding: 0 50px 0 50px;
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.bg-gradient {
+    background-color: #eaeaea;
+    background-size: 20px 20px;
+    background-image: -webkit-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px), -webkit-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+    background-image: -moz-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px), -moz-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+    background-image: -o-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px), -o-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+    background-image: repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+}
+.bg-dark-gray {
+    background: #30373e;
+    color: whitesmoke;
+}
+.bg-dotted1 {
+    background: linear-gradient(270deg, #86b7e7, #e7a2a2, #c1decd);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+/* ---------------------------------------------timeline---------------------------------------------- */
+
+.timeline {
+    height: 100vh;
+}
+.timeline ul {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 1px 100px;
+    color: #fff;
+    font-size: 13px;
+}
+.timeline ul:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    border-left: 2px dotted #fff;
+}
+.timeline ul li {
+    position: relative;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 14px;
+    border-radius: 6px;
+    width: 250px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
+}
+.timeline ul li:not(:first-child) {
+    margin-top: 60px;
+}
+.timeline ul li > span {
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    left: -30px;
+    top: 0;
+    position: absolute;
+}
+.timeline ul li > span:before,
+.timeline ul li > span:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    background: #86b7e7;
+    left: -4px;
+    top: 0;
+}
+.timeline ul li span:after {
+    top: 100%;
+}
+.container ul li > div {
+    margin-left: 10px;
+}
+.timeline div .title,
+.timeline div .type {
+    font-weight: 600;
+    font-size: 16px;
+}
+.timeline div .info {
+    font-weight: 300;
+}
+.timeline div > div {
+    margin-top: 5px;
+}
+.timeline span.number {
+    height: 100%;
+}
+.timeline span.number span {
+    position: absolute;
+    font-size: 16px;
+    line-height: 10px;
+    left: -50px;
+    font-weight: bold;
+}
+.timeline span.number span:first-child {
+    top: 0;
+}
+.timeline span.number span:last-child {
+    top: 100%;
+}
+.rec-image {
+    width: 128px;
+    height: 128px;
+    margin: auto;
+}
+.footer-address {
+    font-size: 200%;
+}
+.my-photo {
+    border: 2px dashed white;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+#end-part {
+    background: black;
+    color: white;
+}
+#banner {
+    /*width:100%;
+	height: 100vh;
+	margin: 0px auto;
+	background-color: #000;
+	background-attachment: fixed;
+    /*background-position: center;*/
+    /*background-image: url(../images/planet1.png), url(../images/star1.png), url(../images/star2.png);
+	background-position: 120% 70px, 0px 0px, 0px 0px;
+	background-repeat: no-repeat, repeat, repeat;
+	animation: animate-background linear 50s infinite;*/
+    
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #000;
+    background-attachment: fixed;
+    /*background-position: center;*/
+    
+    background-image: url(../images/star1.png), url(../images/star2.png);
+    background-position: 0px 0px, 0px 0px;
+    background-repeat: repeat, repeat;
+    /*
+	-webkit-animation:animate-background linear 50s infinite;
+	animation: animate-background linear 50s infinite;*/
+    
+    -webkit-animation-name: animate-background;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: animate-background;
+    animation-timing-function: linear;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes animate-background {
+    from {
+        background-position: 0px 0px, 0px 0px;
+    }
+    to {
+        background-position: -1000px 0px, -500px 0px;
+    }
+}
+@keyframes animate-background {
+    from {
+        background-position: 0px 0px, 0px 0px;
+    }
+    to {
+        background-position: -1000px 0px, -500px 0px;
+    }
+}
+}
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .parallax-holder,
+    .parallax,
+    .timeline,
+    .content-holder-full {
+        height: 768px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .parallax-holder,
+    .parallax,
+    .timeline,
+    .content-holder-full {
+        height: 1024px;
+    }
+}
+/* iphone5 */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .parallax-holder,
+    .parallax,
+    .timeline,
+    .content-holder-full {
+        height: 320px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .parallax-holder,
+    .parallax,
+    .timeline,
+    .content-holder-full {
+        height: 568px;
+    }
+}
+/* iPhone 4 */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .parallax-holder,
+    .parallax,
+    .timeline,
+    .content-holder-full {
+        height: 320px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .parallax-holder,
+    .parallax,
+    .timeline,
+    .content-holder-full {
+        height: 480px;
+    }
+}
